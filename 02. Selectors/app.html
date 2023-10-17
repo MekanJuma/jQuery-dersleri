@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>jQuery Selectors</title>
+        <style>
+            p {
+                padding: 5px;
+                margin: 5px;
+            }
+
+            .outer-div,
+            .inner-div {
+                margin: 10px;
+                padding: 10px;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer-div">
+            <p>Div > Pragraph</p>
+
+            <span id="spanText">Div > Span</span>
+
+            <p>Div > Pragraph</p>
+
+            <div class="inner-div">
+                <p>Div > Div > Paragraph</p>
+                <span>Div > Div > Span</span>
+                <div>
+                    <p>Div > Div > Section > Paragraph</p>
+                </div>
+            </div>
+
+            <section>
+                <p>Div > Section > Paragraph</p>
+            </section>
+        </div>
+
+        <script src="../jquery-3.7.1.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

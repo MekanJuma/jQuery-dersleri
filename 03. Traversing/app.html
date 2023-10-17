@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>jQuery Traversing</title>
+        <style>
+            .container {
+                margin: 20px;
+                padding: 20px;
+                border: 1px solid black;
+            }
+
+            ul {
+                list-style: none;
+            }
+
+            li {
+                padding: 10px;
+            }
+
+            #nested-div {
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>jQuery Traversing Dersi</h1>
+
+        <div class="container">
+            <p class="intro">Intro paragraph.</p>
+            <ul>
+                <li>Item 1</li>
+                <li class="highlight">Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <div id="nested-div">
+                <p>Nested Paragraph 1</p>
+                <span class="nested-span">Nested Span</span>
+            </div>
+        </div>
+
+        <script src="../jquery-3.7.1.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

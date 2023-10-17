@@ -1,0 +1,136 @@
+.container {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: auto;
+    background: #f0f0f0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+#newTask {
+    flex: 1;
+    
+    padding: 12px;
+    outline: none;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 15px #d9d9d9, -5px -5px 15px #ffffff;
+    transition: all 0.3s ease;
+}
+
+#newTask:focus {
+    box-shadow: 3px 3px 8px #d9d9d9, -3px -3px 8px #ffffff;
+}
+
+#addTask {
+    width: 80px;
+    cursor: pointer;
+    background: linear-gradient(145deg, #007BFF, #0056b3);
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+#addTask:hover {
+    background: linear-gradient(145deg, #0056b3, #007BFF);
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#taskList {
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 12px;
+    cursor: grab;
+    background: linear-gradient(145deg, #f0f0f0, #d4d4d4);
+    border-radius: 12px;
+    box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px #ffffff;
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-section,
+.right-section {
+    display: flex;
+    align-items: center;
+}
+.left-section:hover {
+    cursor: pointer;
+}
+
+.checkbox {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.task-title {
+    font-size: 16px;
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+.update,
+.remove {
+    padding: 8px 12px;
+    border-radius: 8px;
+    /* box-shadow: 3px 3px 6px #d9d9d9, -3px -3px 6px #ffffff; */
+    transition: all 0.3s ease;
+}
+
+.update {
+    background-color: #007BFF;
+    color: white;
+    margin-right: 5px;
+}
+
+.update:hover {
+    background-color: #0056b3;
+}
+
+.remove {
+    background-color: #FF4136;
+    color: white;
+}
+
+.remove:hover {
+    background-color: #c0312b;
+}
+
+.completed span {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.completed {
+    background: #e6ffe6;
+    transition: all 0.3s ease;
+}

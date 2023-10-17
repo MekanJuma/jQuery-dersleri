@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>jQuery Event Handlers</title>
+        <style>
+            .card {
+                margin: 20px;
+                padding: 30px;
+                border: 2px solid #ccc;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                font-family: Arial, sans-serif;
+            }
+
+            button {
+                padding: 10px 20px;
+                margin-top: 10px;
+                border: none;
+                background-color: #007bff;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+
+            input {
+                padding: 10px;
+                margin-top: 10px;
+                border: 2px solid #ccc;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card" id="clickCard">
+            <h2>Click Event</h2>
+            <button id="clickButton">Click Me!</button>
+        </div>
+
+        <div class="card" id="hoverCard">
+            <h2>Hover Event</h2>
+            <button id="hoverButton">Hover Over Me!</button>
+        </div>
+
+        <div class="card" id="keyUpCard">
+            <h2>Keyup Event</h2>
+            <input
+                type="text"
+                id="inputField"
+                placeholder="Type something..."
+            />
+            <p id="displayText"></p>
+        </div>
+
+        <div class="card" id="dblClickCard">
+            <h2>Double Click Event</h2>
+            <button id="dblClickButton">Double Click Me!</button>
+        </div>
+
+        <div class="card" id="mouseCard">
+            <h2>Mouse Enter & Leave Event</h2>
+            <div>Hover to Change Color</div>
+        </div>
+
+        <div class="card" id="focusCard">
+            <h2>Focus & Blur Event</h2>
+            <input type="text" id="inputFocus" placeholder="Focus on me..." />
+        </div>
+
+        <div class="card" id="changeCard">
+            <h2>Change Event</h2>
+            <select id="selectBox">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+            </select>
+        </div>
+
+        <div class="card" id="scrollCard">
+            <h2>Scroll Event</h2>
+            <div>Scroll down the page to change this text.</div>
+        </div>
+
+        <div class="card" id="resizeCard">
+            <h2>Resize Event</h2>
+            <div>Resize the window to change this text.</div>
+        </div>
+
+        <script src="../jquery-3.7.1.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

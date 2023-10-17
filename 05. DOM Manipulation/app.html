@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>jQuery DOM Manipulation</title>
+
+        <link rel="stylesheet" href="app.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>To-Do List</h1>
+            <div class="task-input">
+                <input type="text" id="newTask" placeholder="New Task..." />
+                <button id="addTask">Add</button>
+            </div>
+            <ul id="taskList">
+                <li>
+                    <div class="left-section">
+                        <input type="checkbox" class="checkbox" />
+                        <span class="task-title">Default task</span>
+                    </div>
+                    <div class="right-section">
+                        <button class="update">Update</button>
+                        <button class="remove">Remove</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <script src="../jquery-3.7.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
